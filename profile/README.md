@@ -1,22 +1,22 @@
 # QBCore UEFN
 
-Welcome to **QBCore UEFN** — bringing QBCore-inspired roleplay experiences to Unreal Editor for Fortnite (UEFN).
+**QBCore UEFN** is the home for open-source, QBCore-inspired gameplay and roleplay systems built with [Unreal Editor for Fortnite](https://dev.epicgames.com/community/fortnite/getting-started/uefn) and Verse.
 
-## 🎮 About
+## 🚀 What We Build
 
-We build open-source resources, frameworks, and templates that bridge the QBCore ecosystem with UEFN and Verse, enabling creators to craft rich roleplay and game-mode experiences inside Fortnite Creative.
+- **Verse systems** — Reusable gameplay, player, economy, and interaction modules
+- **UEFN components** — Templates and building blocks for roleplay and custom game modes
+- **Developer tooling** — Utilities and examples that streamline UEFN workflows
 
-## 📦 What We Build
+## 📦 Getting Started
 
-- **Verse scripts** — reusable gameplay systems written in Verse for UEFN
-- **UEFN templates** — ready-to-use island templates for roleplay and RP servers
-- **QBCore ports** — adapting QBCore concepts (jobs, economy, inventories, etc.) to the Fortnite Creative platform
-- **Tooling & utilities** — developer tooling to streamline UEFN project workflows
+This organization is in early development. Published projects will include their own installation, configuration, and usage instructions.
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Check the individual repository READMEs for contribution guidelines, or open an issue to start a discussion.
+Contributions are welcome. Review the relevant repository's README and contribution guidance before opening an issue or pull request.
 
-## 📬 Stay Connected
+## 💬 Community
 
-Follow this organization on GitHub to stay up to date with new releases and projects.
+- [QBCore website](https://qbcore.org)
+- [Discord](https://discord.gg/qbcore)
