@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: QBCore UEFN projects
+    url: https://github.com/qbcore-uefn
+    about: Read the official installation, configuration, and development documentation.
+  - name: QBCore Discord support
+    url: https://discord.gg/qbcore
+    about: Ask installation, configuration, and usage questions in the official community.
+  - name: Report a security vulnerability
+    url: https://github.com/qbcore-uefn/.github/security/policy
+    about: Follow the private reporting process. Never disclose a vulnerability in a public issue.

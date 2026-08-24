@@ -1,0 +1,145 @@
+name: Bug report
+description: Report a reproducible defect in an official QBCore UEFN project
+title: ""
+labels:
+  - bug
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve QBCore UEFN.
+
+        Use this form only for reproducible defects in an official QBCore UEFN project. For installation, configuration, or usage help, use the QBCore UEFN projects or Discord links in the issue chooser. Do not disclose security vulnerabilities here; follow the [security policy](https://github.com/qbcore-uefn/.github/security/policy) and report them privately.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the open and closed issues and did not find an existing report for this problem.
+          required: true
+        - label: I tested the latest official version, or I explain below why that was not possible.
+          required: true
+        - label: This is a reproducible defect, not a request for installation, configuration, or general support.
+          required: true
+        - label: I agree to follow the [QBCore UEFN Code of Conduct](https://github.com/qbcore-uefn/.github/blob/main/CODE_OF_CONDUCT.md).
+          required: true
+
+  - type: input
+    id: project-version
+    attributes:
+      label: Project version or commit
+      description: Provide the release, version, or full commit SHA where the problem occurs.
+      placeholder: "Example: 2.3.1 or 0123456789abcdef..."
+    validations:
+      required: true
+
+  - type: input
+    id: uefn-version
+    attributes:
+      label: UEFN version
+      description: Provide the exact Unreal Editor for Fortnite version used during testing.
+      placeholder: "Example: the UEFN release shown in the editor"
+
+  - type: input
+    id: fortnite-version
+    attributes:
+      label: Fortnite ecosystem version
+      description: Provide the Fortnite ecosystem release used for the playtest.
+      placeholder: "Example: the current Fortnite ecosystem release"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: test-environment
+    attributes:
+      label: Test environment
+      options:
+        - UEFN edit session
+        - Live Edit session
+        - Private uploaded version
+        - Published island
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modifications
+    attributes:
+      label: Project modification status
+      description: Tell us whether the problem reproduces with the official project unchanged.
+      options:
+        - Reproduces with the unmodified official project
+        - The project is modified
+        - Not tested without modifications
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Relevant dependencies
+      description: List relevant Verse modules, devices, assets, plugins, and their versions.
+      placeholder: |
+        - dependency: version or commit
+        - dependency: version or commit
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Clearly describe the problem and its impact.
+      placeholder: Describe what you observed and when it occurs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that reproduces the problem.
+      placeholder: |
+        1. Start with...
+        2. Configure...
+        3. Run...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe what should have happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe the actual result, including whether it is consistent or intermittent.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Paste the smallest useful UEFN, Verse, or play-session log excerpt after removing sensitive information.
+      render: shell
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add screenshots, video, a minimal reproduction, or other information that may help investigation.
+
+  - type: checkboxes
+    id: sensitive-information
+    attributes:
+      label: Sensitive information
+      options:
+        - label: I removed passwords, tokens, webhook URLs, license keys, database credentials, player identifiers, and other private information from this report.
+          required: true

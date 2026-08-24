@@ -1,0 +1,80 @@
+name: Feature request
+description: Propose an improvement to an official QBCore UEFN project
+title: ""
+labels:
+  - enhancement
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem first, then the change you believe would solve it. Focused proposals with clear use cases are easier to evaluate and maintain.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and pull requests for this proposal.
+          required: true
+        - label: This proposal is for an official QBCore UEFN project and is not a general support request.
+          required: true
+        - label: I agree to follow the [QBCore UEFN Code of Conduct](https://github.com/qbcore-uefn/.github/blob/main/CODE_OF_CONDUCT.md).
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What limitation or recurring problem would this change address, and who benefits?
+      placeholder: Explain the need without assuming a particular implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior, API, configuration, or workflow you would like to add or change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe existing workarounds or other designs you considered.
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and migration impact
+      description: Identify possible effects on project settings, Verse APIs, devices, persistence schemas, dependencies, performance, or published islands.
+      placeholder: State "None known" when the proposal is backward compatible.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Are you willing to contribute this change?
+      options:
+        - "Yes"
+        - "Maybe, with guidance"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add mockups, examples, related projects, measurements, or other supporting information.
+
+  - type: checkboxes
+    id: sensitive-information
+    attributes:
+      label: Sensitive information
+      options:
+        - label: I removed credentials, private project or island data, player identifiers, and other sensitive information from this proposal.
+          required: true

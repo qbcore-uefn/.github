@@ -1,0 +1,60 @@
+name: Documentation issue
+description: Report missing, incorrect, or unclear documentation
+title: ""
+labels:
+  - documentation
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for documentation that is missing, incorrect, outdated, or difficult to understand. Use Discord for individual setup or troubleshooting help.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and confirmed this documentation problem has not already been reported.
+          required: true
+        - label: I agree to follow the [QBCore UEFN Code of Conduct](https://github.com/qbcore-uefn/.github/blob/main/CODE_OF_CONDUCT.md).
+          required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: Provide the URL, repository path, section heading, command, export, or event name involved.
+      placeholder: "Example: a repository URL, README.md#configuration, Verse file, or device name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing?
+      description: Explain why the current documentation is inaccurate, incomplete, outdated, or unclear.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: Describe the information or example that should replace or supplement the current content.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add version information, screenshots, tested examples, or related references.
+
+  - type: checkboxes
+    id: sensitive-information
+    attributes:
+      label: Sensitive information
+      options:
+        - label: I removed credentials, private project or island data, player identifiers, and other sensitive information from this report.
+          required: true
